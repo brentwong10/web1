@@ -1,0 +1,281 @@
+@media all and (min-width: 1200px) { /*xl*/
+}
+@media all and (max-width: 1199px) { /*lg*/
+}
+@media all and (max-width: 991px) { /*md*/
+	.scene-home .keyvisual-wrapper .keyvisual{
+		height: auto;
+	}
+	.top-header{
+		display: none;
+	}
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 924px) {
+	.scene-home .fr-logo-wrapper{
+		position: static;
+	}
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .scene-home .event-name-wrapper{
+  	width: 60%;
+    margin: auto;
+  }
+  .footer-wrapper.fixed{
+  	position: relative;
+  }
+  .scene-draw .draw-container .drawing-wrapper{
+  	top: 45%;
+  }
+  .scene-draw.active{
+  	min-height: 720px;
+  }
+  .scene-draw .fail-wrapper .fail-quota-box{
+  	background-size: 85%;
+  	height:110px;
+  }
+  .scene-draw .fail-wrapper .fail-quota-box span{
+  	font-size: 88px !important;
+    left: -16.2% !important;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+
+}
+
+@media all and (max-width: 768px) { /*sm*/
+
+	/*===============================
+	=            General            =
+	===============================*/
+	#main, .scene-wrapper{
+		padding-top: 60px;
+	}
+	.scene-wrapper .container{
+		padding: 0;
+		padding-bottom: 30px;
+	}
+	.top-header{
+		position: static;
+	}
+	.fr-logo-wrapper,
+	.top-header{
+		display: none;
+	}
+	.qr-scan-wrapper{
+		text-align: center;
+		margin: 1em auto;
+	}
+	.qr-scan-wrapper img{
+		width: 100%;
+		max-width: 300px;
+	}
+	.prize-wrapper img{
+		transform: scale(0.75);
+	}
+	.btn img{
+		transform: scale(0.8);
+	}
+	/*============================
+	=            Home            =
+	============================*/
+	.scene-home .fr-logo-wrapper{
+		float: none;
+	}
+	.scene-home .main-title-wrapper{
+		height: auto;
+		min-height: 0;
+	}
+	.scene-home .event-name-wrapper img{
+		margin-left: auto;
+	}
+	.scene-home,
+	.scene-form-register,
+	.scene-form-register-confirm{
+		height: 100% !important;
+		width: 100%;
+		/* background-image: url(../assets/img/leaf-l-m.png), url(../assets/img/leaf-r-m.png); */
+		background-repeat: no-repeat;
+		background-position: 0% 250px, 100% 0;
+		background-size: auto,auto;
+	}
+	.scene-home .main-title-wrapper{
+		margin: 0px auto;
+	}
+	.scene-home .main-title-wrapper .main-title,
+	.scene-home .main-title-wrapper .sub-title{
+		height: auto;
+		min-height: 0;
+	}
+	.scene-home .main-title-wrapper .main-title{
+		margin: 30px 0;
+	}
+	.scene-home .home-buttons-wrapper .avail,
+	.scene-home .home-buttons-wrapper .reg-btn{
+		margin: 1em 0;
+	}
+
+	.scene-home .keyvisual-wrapper{
+		height: auto;
+		min-height: 0;
+		overflow: hidden;
+	}
+	.scene-home .keyvisual-wrapper .keyvisual{
+		width: 100%;
+		left: 0;
+		right: 0;
+		margin: auto auto auto auto;
+		height: auto;
+	}
+
+	/*================================
+	=            Register            =
+	================================*/
+	.scene-form-register .event-name-wrapper a img{
+		width: 75%;
+	}
+	.scene-form-register .upload-photo-btn{
+		transform: scale(0.75);
+	}
+
+	.scene-form-register .form-register .col-fields table tr td{
+		display: block;
+	}
+	.scene-form-register .form-register .col-fields table tr td input{
+		width: 100%;
+		padding: .8em;
+	}
+	.scene-form-register .form-register label,
+	.scene-form-register .form-register .col-fields table tr td:first-child{
+		text-align: left;
+	}
+	.scene-form-register .form-register label,
+	.scene-form-register .form-register table tr td{
+		margin: 0;
+		padding: 0 0 .2em 0;
+	}
+	.scene-form-register .form-register .col-fields table tr{
+		display: block;
+		margin: 1.3em 0;
+	}
+	.scene-form-register input[type="checkbox"]{
+		width: calc(100% - 35px) !important;
+		padding: 0 !important;
+	}
+	.scene-form-register .trans-image,
+	.scene-form-register-confirm .trans-image{
+		max-height:500px;
+		width:auto;
+	}
+	.scene-form-register-confirm .trans-image img{
+		max-width:50%;
+	}
+	.confirm-txt-wrapper img{
+		max-width: 100%;
+	}
+
+	.scene-form-register-confirm .form-register-confirm tr td:first-child{
+		width: 50%;
+	}
+	.scene-form-register-confirm .form-register-confirm tr td:last-child{
+		width: 50%;
+	}
+	.scene-form-register-confirm .form-register-confirm .button-wrapper .btn{
+		margin: auto;
+	}
+	.video-wrapper{
+		min-height: 200px;
+	}
+
+	/*============================
+	=            Draw            =
+	============================*/
+
+	.scene-draw{
+		/* background-image: url(../assets/img/draw-bg-l-m.png), url(../assets/img/draw-bg-r-m.png); */
+		background-repeat: no-repeat;
+		background-position: left 37%, right 0%;
+		background-size: auto 30%, auto 36%;
+	}
+	.scene-draw .draw-container .drawing-wrapper{
+		width: 95%;
+		padding-top: 30px;
+	}
+	.scene-draw .drawing-txt img{
+		max-width: 95%;
+	}
+	.scene-draw .drawing-visual img,
+	.progress{
+		max-width: 90%;
+	}
+	.scene-draw .success-wrapper .success-title{
+		margin-bottom: 2em;
+	}
+	.scene-draw .success-wrapper .success-title img{
+		max-width: 100%;
+	}
+	.scene-draw .success-wrapper .content-txt{
+		width: 90%;
+	}
+	.scene-draw .fail-wrapper .fail-quota-box span{
+		font-size: 50px;
+	}
+	.scene-draw .main-title-wrapper img{
+		width:80%;
+	}
+
+	.scene-draw .action-msg{
+		max-width: 100%;
+	}
+	.scene-draw .fail-wrapper .fail-title{
+		margin: 20px auto;
+	}
+	.scene-draw .fail-wrapper .fail-title-wrapper img{
+		width: 50%;
+	}
+	.scene-draw .support-txt{
+		margin-left: auto;
+	}
+	.scene-draw .tnc-btn{
+		margin-top: 40px;
+	}
+}
+@media all and (max-width: 575px) { /*xs*/
+	/*=============================
+	=          Modal XS          =
+	=============================*/
+	#modal-scan video{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 550px) {
+	#modal-tnc .modal-content .modal-header{
+		background-image: url(../assets/img/kb-logo.jpg), url(../assets/img/header-img-m.png);
+		background-size: 25%, auto 95%;
+	}
+}
+@media all and (max-width: 456px) {
+	/*=============================
+	=          Modal 456          =
+	=============================*/
+	#modal-tnc .modal-content{
+		min-width: 345px;
+	}
+	#modal-tnc .modal-content ol{
+		padding-left: 2em;
+	}
+}
+
+@media all and (max-width: 360px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

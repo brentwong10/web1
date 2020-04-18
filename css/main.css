@@ -1,0 +1,501 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
+	min-width: 345px;
+}
+body #main{
+	font-size: 16px !important;
+}
+a{color:#ef453b;}
+a:hover{color:#ef453b;}
+#footer a:hover{color:white;}
+input:focus {outline:none;}
+button:focus {outline: none !important;}
+.btn.focus, .btn:focus{box-shadow: none !important;}
+.btn a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
+#main,.scene-wrapper{
+	width: 100%;
+	/* min-height: 100%; */
+	min-height: calc(700px - 108px - 216px);
+	padding: 0;
+	padding-top: 60px;
+}
+
+.footer-wrapper.fixed{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.scene-wrapper img {
+	display: inline-block;
+	width: auto;
+	max-width: auto;
+	height: auto;
+}
+
+/*===========================
+=           Modal           =
+===========================*/
+.modal-dialog{
+	max-width: 640px;
+}
+.modal-content{
+	border-radius: 1rem;
+	max-height: 630px;
+}
+.modal-body{
+	overflow-y: scroll;
+	flex-direction: column;
+	padding: 1em 0;
+    flex: 1 2 auto;
+    height:440px;
+}
+#modal-tnc .modal-content{
+	padding: 2em;
+	word-break: break-all;
+}
+#modal-tnc .modal-content .modal-header{
+	background-image: url(../assets/img/tnc-bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 128px;
+	border: none;
+}
+.modal-header .close{
+	position: absolute;
+	opacity: 1;
+	outline: none;
+    right: 30px;
+    top: -5px;
+    padding: 0;
+}
+.modal-header .close img{
+    width: 35px;
+}
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+	opacity: 1 !important;
+}
+
+/*===============================
+=            General            =
+===============================*/
+.top-header{
+	position: absolute;
+}
+.highlight{
+	color: #ef453b;
+	font-weight: bold;
+}
+.scene{
+	position: static;
+}
+.header-logo-container{
+	padding: 0;
+}
+.header-logo-container .header-logo{
+	position: fixed;
+	z-index: 100;
+}
+
+.draw-win-wrapper img{
+	display: inline-block;
+	margin-left: -50%;
+	width: 25%;
+}
+
+.draw-win-wrapper{
+	text-align: center;
+}
+
+.draw-win img{
+	display: inline-block;
+	margin-left: -50%;
+}
+
+.declare-text-wrapper{
+	text-align:center;
+	color: #ef453b;
+	margin: 1em 0px;
+}
+
+.prize-wrapper img{
+	display: block;
+	margin: auto;
+}
+
+@media all and (min-width: 768px) {
+	.prize-wrapper img{
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+}
+
+.query-text-wrapper{
+	color: #ef453b;
+	font-weight: bold;
+	margin: 1em 0px;
+}
+
+canvas{
+	max-width:100%;
+}
+
+.event-name-wrapper img{
+	margin-left: -30px;
+}
+/*============================
+=            Home            =
+============================*/
+
+.scene-home,
+.scene-form-register,
+.scene-form-register-confirm{
+	min-height: 100% !important;
+	width: 100%;
+	/* background-image: url(../assets/img/leaf-l.png), url(../assets/img/leaf-r.png); */
+	background-repeat: no-repeat;
+	background-position: left 130%, right 135%;
+	background-size: auto 90%,auto 100%;
+}
+.scene-home{
+	margin-bottom: -85px;
+}
+.scene-home .container-fluid.home,
+.scene-home .container.content{
+	min-height: 100%;
+}
+
+.scene-home .fr-logo-wrapper{
+	float: left;
+	position: fixed;
+}
+/* .scene-home .content{
+	margin-top: -50px;
+} */
+.scene-home .main-title-wrapper,
+.scene-home .prize-wrapper{
+	text-align: center;
+}
+
+.scene-home .tnc-btn{
+	font-size: 1.5em;
+	text-decoration: underline;
+	color:#ef453b;;
+}
+
+.scene-home .main-title-wrapper{
+	margin-top: -30px;
+	margin-bottom: 1.5em;
+	display:inline-block;
+	height: 60%;
+	min-height: calc(300px + 220px + 30px);
+}
+.scene-home .main-title-wrapper img{
+	max-width: 75%;
+}
+.scene-home .main-title-wrapper .main-title{
+	height: calc(60% - 30px);
+	min-height: 300px;
+}
+.scene-home .main-title-wrapper .sub-title{
+	display: block;
+	margin: auto;
+	text-align: center;
+	height: 20%;
+	min-height: 110px;
+}
+.scene-home .main-title-wrapper .main-title+.sub-title{
+	margin-top: 30px;
+}
+.scene-home .home-buttons-wrapper .button-group{
+	text-align: center;
+	margin: 1.5em 0;
+}
+.scene-home .home-buttons-wrapper .avail,
+.scene-home .home-buttons-wrapper .reg-btn{
+	display: inline-block;
+	vertical-align: middle;
+}
+.scene-home .home-buttons-wrapper .reg-btn,
+.scene-home .home-buttons-wrapper .way-btn{
+	height: 75px;
+}
+/*.scene-home .home-buttons-wrapper .reg-btn:hover img{
+	 display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../assets/img/upload-btn-on.png) no-repeat;
+  width: 270px;
+  height: 75px;
+  padding-left: 270px;
+}*/
+.scene-home .home-buttons-wrapper .way-btn:hover img{
+	 display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../assets/img/way-btn-on.png) no-repeat;
+  width: 270px; /* Width of new image */
+  height: 74px; /* Height of new image */
+  padding-left: 270px; /* Equal to width of new image */
+}
+
+.scene-home .avail-wrapper .avail{
+	background-image: url(../assets/img/quota-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 334px;
+	height: 126px;
+	margin-top: -1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.scene-home .avail span{
+	font-size: 40px;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+    width: 80px;
+	top: 32px;
+    left: 195px;
+}
+.scene-home .keyvisual-wrapper {
+	text-align: center;
+	margin-top: 1em;
+	height: 55%;
+	min-height: 480px;
+}
+.scene-home .keyvisual-wrapper .keyvisual{
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+
+.scene-home .event-name-wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+/*================================
+=            Register            =
+================================*/
+.scene-form-register .event-name-wrapper,
+.scene-form-register-confirm .event-name-wrapper,
+.scene-form-register-confirm .confirm-txt-wrapper,
+.scene-form-register .enter-txt-wrapper{
+	text-align: center;
+}
+
+.scene-form-register .enter-txt-wrapper,
+.scene-form-register .event-name-wrapper{
+	margin-bottom: 15px;
+}
+
+.scene-form-register .col-sample img{
+	width: 100%;
+}
+
+.scene-form-register input[type="text"],
+.scene-form-register input[type="email"],
+.scene-form-register select{
+	border: 1px solid #333;
+    border-radius: 2px;
+    padding: .7em 1em;
+    font-size: 15px;
+    width: 100%;
+    background-color: white;
+}
+
+.scene-form-register .trans_month,
+.scene-form-register .trans_day{
+	width: calc((100% - 60px) / 2);
+}
+
+.scene-form-register .sample-image{
+	width: 100%;
+	min-width: 200px;
+}
+
+.scene-form-register .form-register,
+.scene-form-register-confirm .form-register-confirm{
+	text-align: center;
+}
+.scene-form-register .form-register table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.scene-form-register .form-register .col-fields table tr td{
+	padding: .5em 0;
+}
+.scene-form-register .form-register .col-fields table tr td:first-child{
+	text-align: right;
+	padding-right: 1em;
+}
+
+.scene-form-register .form-register .col-fields table tr td:nth-child(2){
+	width: 275px;
+}
+
+.scene-form-register .form-register .col-fields table tr td.checkboxes-cell,
+.scene-form-register .form-register .col-fields table tr td.checkboxes-cell label{
+	text-align: left;
+}
+.scene-form-register .form-register label{
+	text-align: right;
+}
+.scene-form-register .form-register .col-fields{
+	text-align: left;
+}
+.scene-form-register .form-register tr td:first-child label img{
+	text-align: right;
+}
+.scene-form-register .form-register tr td:first-child label img:last-child{
+	margin-top: 5px;
+}
+.scene-form-register .form-register .col-fields tr td[rowspan]{
+	vertical-align: top;
+	padding-left: 15px;
+}
+.scene-form-register .button-wrapper .btn{
+	cursor: pointer;
+}
+.scene-form-register .sorry-msg-box,
+.modal-scan .scan-sorry-msg-box{
+	text-align: center;
+	margin-bottom: 1em;
+}
+.scene-form-register .error-msg-box li,
+.modal-scan .scan-error-msg-box li{
+	text-align: center;
+}
+.scene-form-register .error-msg-box{
+	padding-left: 0;
+}
+.scene-form-register .error-msg-box li{
+	list-style: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+.scene-form-register-confirm .confirm-txt{
+	margin-bottom: 1em;
+}
+
+.scene-form-register-confirm .field-value{
+	display: inline-block;
+    margin-left: 1em;
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.scene-form-register-confirm form{
+
+}
+.scene-form-register-confirm .form-register-confirm table{
+	margin: auto;
+}
+.scene-form-register-confirm .form-register-confirm table tr td:first-child{
+	text-align: right;
+}
+.scene-form-register-confirm table td{
+	padding-bottom: 2em;
+}
+.scene-form-register-confirm .form-register-confirm table tr td:last-child{
+	text-align: left;
+}
+
+.scene-form-register .trans-image-wrapper,
+.scene-form-register-confirm .trans-image-wrapper{
+	margin: 1em 0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#modal-tnc ul li{
+	list-style-type: circle;
+}
+
+#modal-tnc .modal-body div:not(:first-child){
+	margin-top: 1em ;
+	margin-bottom: 1em;
+}
+
+#modal-tnc .modal-content .modal-header{
+	background-image: url(../img/kb-logo.jpg), url(../img/tnc-bg.png);
+	background-repeat: no-repeat;
+	background-size: 20%, auto 100%;
+	background-position: left 10%, right -5%;
+	border: none;
+}
+
+/*==========================
+=            UI            =
+==========================*/
+
+.checkbox-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px !important;
+  cursor: pointer;
+  font-size: 14px;
+  color: #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: top;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  border: 1px solid #ef453b;
+  border-radius: 2px;
+}
+
+.checkbox-wrapper:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-wrapper input:checked ~ .checkmark {
+  /* background-color: #ef453b; */
+}
+.checkmark::after {
+  content: " ";
+  position: absolute;
+ /*  display: none; */
+}
+.checkbox-wrapper input:checked ~ .checkmark::after {
+  display: block;
+  width: 80%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #ef453b;
+  border-radius: 2px;
+}
